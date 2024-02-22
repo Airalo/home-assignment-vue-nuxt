@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    font-family: "IBM Plex Sans", sans-serif;
+    @apply text-font-body;
+    @apply text-primary;
+    @apply bg-body;
+  }
+
+  .nuxt-icon svg {
+    margin-bottom: 0 !important;
+  }
+
+  .country-flag-size {
+    @apply w-[140px];
+    @apply h-[88px];
+  }
+}
