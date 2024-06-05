@@ -54,12 +54,6 @@ const MockPackageData = {
     ],
   },
 };
-
-onMounted(async () => {
-  const response: any = await useFetch("/api/countries");
-
-  console.log("onMounted: countries response", response);
-});
 </script>
 
 <template>
