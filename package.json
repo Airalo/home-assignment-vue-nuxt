@@ -7,6 +7,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "engines": {
+    "node": ">=16.0.0 <20.0.0"
+  },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
     "autoprefixer": "^10.4.13",
