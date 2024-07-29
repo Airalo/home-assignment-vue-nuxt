@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const config = useRuntimeConfig();
 
-const isPopuplarCountries = true;
+const isPopularCountries = true;
 
 const preloader = false;
 
@@ -63,7 +63,7 @@ const MockPackageData = {
     </div>
     <div class="mb-5">
       <h2 class="text-h2 leading-h2 tracking-h2 font-semibold">
-        {{ isPopuplarCountries ? "Popular" : "All" }} Countries
+        {{ isPopularCountries ? "Popular" : "All" }} Countries
       </h2>
     </div>
     <!-- Mock View Start: Mock View of Country and Package components. This components should be removed. -->
