@@ -20,16 +20,16 @@ eSIMs must be visible when end-users tap the rows.
 ## API Endpoints: 
 
 1. The Endpoints of Countries: 
-    * **Popular Countries:** https://airalo.com/api/v2/countries?type=popular
-    * **All Countries:** https://airalo.com/api/v2/countries
-    * **Packages by Country SLUG:** https://airalo.com/api/v2/countries/{slug}
+    * **Popular Countries:** https://www.airalo.com/api/v2/countries?type=popular
+    * **All Countries:** https://www.airalo.com/api/v2/countries
+    * **Packages by Country SLUG:** https://www.airalo.com/api/v2/countries/{slug}
 
 2. The Endpoints of Regions: 
-    * **All Regions:** https://airalo.com/api/v2/regions
-    * **Packages by Region SLUG:** https://airalo.com/api/v2/regions/{slug}
+    * **All Regions:** https://www.airalo.com/api/v2/regions
+    * **Packages by Region SLUG:** https://www.airalo.com/api/v2/regions/{slug}
 
 3. The Endpoint of Global: 
-    * **All Global eSIMs:** https://airalo.com/api/v2/regions/world
+    * **All Global eSIMs:** https://www.airalo.com/api/v2/regions/world
 
 ## Example Design URL: 
 https://www.figma.com/file/qJRokxdCSMIPeAWr4YuxLk/Airalo-Web---Engineering-Task?node-id=1%3A2&t=GchZ41Taqus3QTYu-0
