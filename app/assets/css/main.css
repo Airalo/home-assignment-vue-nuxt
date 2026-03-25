@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@source "../**/*.vue";
 
 @theme {
   --breakpoint-sm: 640px;
@@ -19,23 +20,23 @@
   --color-grey-package-light: #eeeeee;
   --color-body: #fafafa;
 
-  --font-size-icon: 22px;
-  --font-size-icon--line-height: 1;
-  --font-size-icon-small: 8px;
-  --font-size-icon-small--line-height: 1;
-  --font-size-small: 0.8125rem;
-  --font-size-small--line-height: 1.38461;
-  --font-size-row: 0.6875rem;
-  --font-size-row--line-height: 1.27272;
-  --font-size-normal: 0.9375rem;
-  --font-size-body: 1rem;
-  --font-size-h1: 1.9375rem;
-  --font-size-h2: 1.6875rem;
-  --font-size-h3: 1.1875rem;
-  --font-size-h4: 1.0625rem;
-  --font-size-h6: 0.8125rem;
-  --font-size-CTA: 0.6875rem;
-  --font-size-CTA-small: 0.625rem;
+  --text-icon: 22px;
+  --text-icon--line-height: 1;
+  --text-icon-small: 8px;
+  --text-icon-small--line-height: 1;
+  --text-small: 0.8125rem;
+  --text-small--line-height: 1.38461;
+  --text-row: 0.6875rem;
+  --text-row--line-height: 1.27272;
+  --text-normal: 0.9375rem;
+  --text-font-body: 1rem;
+  --text-h1: 1.9375rem;
+  --text-h2: 1.6875rem;
+  --text-h3: 1.1875rem;
+  --text-h4: 1.0625rem;
+  --text-h6: 0.8125rem;
+  --text-CTA: 0.6875rem;
+  --text-CTA-small: 0.625rem;
 
   --leading-button: 1;
   --leading-tabs: 1.3333;
@@ -46,7 +47,7 @@
   --leading-h4: 1.17647;
   --leading-h6: 1.1538461;
 
-  --tracking-DEFAULT: normal;
+  --tracking: normal;
   --tracking-h1: -0.6px;
   --tracking-h2: -0.5px;
   --tracking-h3: -0.2px;
@@ -56,10 +57,10 @@
   --tracking-row: 1px;
 
   --radius-small: 4px;
-  --radius-DEFAULT: 7px;
+  --radius: 7px;
   --radius-flag: 12px;
 
-  --shadow-DEFAULT: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  --shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
   --shadow-flag: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
 
   --spacing-icon: 22px;
@@ -70,7 +71,7 @@
   html,
   body {
     font-family: 'IBM Plex Sans', sans-serif;
-    @apply text-body;
+    font-size: var(--text-font-body);
     @apply text-primary;
     @apply bg-body;
   }
