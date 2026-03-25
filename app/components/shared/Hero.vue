@@ -1,19 +1,19 @@
 <template>
-  <div class="hero relative h-[calc(100vw/3)] h-[467px] pt-[6.75rem]">
-    <div class="container mx-auto relative z-20 h-full">
-      <div class="flex justify-center items-center h-full">
-        <div class="grid xl:grid-cols-12 gap-7.5">
+  <div class="hero relative h-[467px] h-[calc(100vw/3)] pt-[6.75rem]">
+    <div class="relative z-20 container mx-auto h-full">
+      <div class="flex h-full items-center justify-center">
+        <div class="grid gap-7.5 xl:grid-cols-12">
           <div class="col-span-6 col-start-4">
-            <h1 class="text-h1 leading-h1 font-semibold text-white text-center">
+            <h1 class="text-h1 text-center leading-h1 font-semibold text-white">
               Digital SIM cards (eSIM) to save you from expensive roaming
             </h1>
-            <p class="text-normal leading-normal text-white text-center mt-2.5">
+            <p class="text-normal mt-2.5 text-center leading-normal text-white">
               100% prepaid data packs with no hidden fees.
               <span class="underline">Learn more</span>
             </p>
             <div class="grid grid-cols-6 gap-7.5">
               <div class="col-span-4 col-start-2 py-10">
-                <slot></slot>
+                <slot />
               </div>
             </div>
             <div class="text-center">
@@ -21,7 +21,7 @@
                 Is your device eSIM compatible?
               </p>
               <button
-                class="text-CTA-small leading-button font-bold text-white border border-solid border-white rounded-small px-5 py-2 mt-5"
+                class="text-CTA-small mt-5 rounded-small border border-solid border-white px-5 py-2 leading-button font-bold text-white"
               >
                 SHOW SUPPORTED DEVICES
               </button>
@@ -30,15 +30,14 @@
         </div>
       </div>
     </div>
-    <div class="absolute left-0 top-0 w-full h-full overflow-hidden z-10">
+    <div class="absolute top-0 left-0 z-10 h-full w-full overflow-hidden">
       <nuxt-img
         src="/images/hero@2x.webp"
         loading="lazy"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-auto z-10"
+        alt=""
+        class="absolute top-1/2 left-0 z-10 h-auto w-full -translate-y-1/2 transform"
       />
-      <div
-        class="absolute left-0 top-0 w-full h-full bg-black opacity-50 z-20"
-      ></div>
+      <div class="absolute top-0 left-0 z-20 h-full w-full bg-black opacity-50" />
     </div>
   </div>
 </template>

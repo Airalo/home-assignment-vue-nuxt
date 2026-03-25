@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --breakpoint-sm: 640px;
@@ -8,16 +8,16 @@
 
   --color-transparent: transparent;
   --color-current: currentColor;
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-black: #000000;
-  --color-primary: #4A4A4A;
-  --color-secondary: #8A8A8A;
-  --color-grey-light: #AFAFAF;
-  --color-grey: #DDDDDD;
-  --color-grey-dark: #2D2D2D;
+  --color-primary: #4a4a4a;
+  --color-secondary: #8a8a8a;
+  --color-grey-light: #afafaf;
+  --color-grey: #dddddd;
+  --color-grey-dark: #2d2d2d;
   --color-grey-package-dark: #343434;
-  --color-grey-package-light: #EEEEEE;
-  --color-body: #FAFAFA;
+  --color-grey-package-light: #eeeeee;
+  --color-body: #fafafa;
 
   --font-size-icon: 22px;
   --font-size-icon--line-height: 1;
@@ -43,7 +43,7 @@
   --leading-h1: 1.19354;
   --leading-h2: 1.1851851852;
   --leading-h3: 1.1578947368;
-  --leading-h4: 1.176470;
+  --leading-h4: 1.17647;
   --leading-h6: 1.1538461;
 
   --tracking-DEFAULT: normal;
@@ -59,16 +59,17 @@
   --radius-DEFAULT: 7px;
   --radius-flag: 12px;
 
-  --shadow-DEFAULT: 0 10px 30px 0 rgba(0,0,0,0.15);
-  --shadow-flag: 0 5px 15px 0 rgba(0,0,0,0.3);
+  --shadow-DEFAULT: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  --shadow-flag: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
 
   --spacing-icon: 22px;
   --spacing-7_5: 30px;
 }
 
 @layer base {
-  html, body {
-    font-family: "IBM Plex Sans", sans-serif;
+  html,
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
     @apply text-body;
     @apply text-primary;
     @apply bg-body;

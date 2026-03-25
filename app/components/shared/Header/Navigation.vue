@@ -1,25 +1,24 @@
 <script setup lang="ts">
-const navigation = [
-  {
-    key: "auth",
-  },
-  {
-    key: "language",
-  },
-];
+  const navigation = [
+    {
+      key: 'auth',
+    },
+    {
+      key: 'language',
+    },
+  ];
 </script>
 
 <template>
-  <div class="flex justify-end items-center">
-    <ul class="flex justify-end items-center">
+  <div class="flex items-center justify-end">
+    <ul class="flex items-center justify-end">
       <li
         v-for="(nav, index) in navigation"
         :key="`nav-item-${index}`"
+        class="flex items-center justify-end"
         :class="[
-          'flex justify-end items-center',
           {
-            'border-r border-solid border-white pr-[30px] mr-[30px]':
-              index < navigation.length - 1,
+            'mr-[30px] border-r border-solid border-white pr-[30px]': index < navigation.length - 1,
           },
         ]"
       >

@@ -1,24 +1,20 @@
 <script setup lang="ts">
-export interface Props {
-  CountryData?: any;
-  PackageData: any;
-}
+  export interface Props {
+    countryData?: any;
+    packageData: any;
+  }
 
-const props = withDefaults(defineProps<Props>(), {
-  CountryData: null,
-});
+  const props = withDefaults(defineProps<Props>(), {
+    countryData: null,
+  });
 </script>
 
 <template>
   <div>
     <div class="grid grid-cols-1 gap-2.5">
-      <template v-if="props.CountryData">
+      <template v-if="props.countryData">
         <div>
-          <ListCountry
-            :CountryName="CountryData.title"
-            :ImageUrl="CountryData.imageUrl"
-            :Active="false"
-          />
+          <ListCountry :country-name="countryData.title" :image-url="countryData.imageUrl" :active="false" />
         </div>
       </template>
 
@@ -26,14 +22,14 @@ const props = withDefaults(defineProps<Props>(), {
         <div class="grid grid-cols-3 gap-7.5">
           <div>
             <ListPackage
-              :PackageName="PackageData.packageName"
-              :SupportedCountries="PackageData.supportedCountries"
-              :Data="PackageData.data"
-              :Validity="PackageData.validity"
-              :Price="PackageData.price"
-              :StyleTheme="PackageData.styleTheme"
-              :StyleThemeGradient="PackageData.styleThemeGradient"
-              :OperatorImageUrl="PackageData.operatorImageUrl"
+              :package-name="packageData.packageName"
+              :supported-countries="packageData.supportedCountries"
+              :data="packageData.data"
+              :validity="packageData.validity"
+              :price="packageData.price"
+              :style-theme="packageData.styleTheme"
+              :style-theme-gradient="packageData.styleThemeGradient"
+              :operator-image-url="packageData.operatorImageUrl"
             />
           </div>
         </div>

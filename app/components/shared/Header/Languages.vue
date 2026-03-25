@@ -1,27 +1,27 @@
 <script setup lang="ts">
-const Language = {
-  icon: "language",
-  iconRight: "arrow_down",
-  class: "text-normal leading-normal text-white",
-  text: "English",
-};
+  const Language = {
+    icon: 'language',
+    iconRight: 'arrow_down',
+    class: 'text-normal leading-normal text-white',
+    text: 'English',
+  };
 </script>
 
 <template>
-  <div class="inline-flex justify-end items-center">
+  <div class="inline-flex items-center justify-end">
     <Icon
       :name="`local:${Language.icon}`"
-      class="flex justify-center items-start w-icon h-icon text-white text-icon overflow-hidden mr-2.5"
+      class="text-icon mr-2.5 flex h-icon w-icon items-start justify-center overflow-hidden text-white"
     />
 
     <a :class="Language.class" href="#">
       {{ Language.text }}
     </a>
 
-    <a class="w-[22px] h-[22px] flex justify-center items-center" href="#">
+    <a class="flex h-[22px] w-[22px] items-center justify-center" href="#" aria-label="Language selector">
       <Icon
         :name="`local:${Language.iconRight}`"
-        class="flex justify-center items-center w-icon h-icon text-white text-icon-small overflow-hidden"
+        class="text-icon-small flex h-icon w-icon items-center justify-center overflow-hidden text-white"
       />
     </a>
   </div>

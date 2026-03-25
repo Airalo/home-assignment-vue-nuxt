@@ -1,30 +1,28 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-07-15",
+  compatibilityDate: '2025-07-15',
 
   devServer: {
     port: 4000,
   },
 
-  css: ["~/assets/css/main.css"],
+  css: ['~/assets/css/main.css'],
 
   app: {
     head: {
-      meta: [
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-      ],
+      meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
       link: [
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossorigin: "",
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: '',
         },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap",
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap',
         },
       ],
     },
@@ -32,18 +30,18 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBaseOld: "https://airalo.com/api/v2",
-      apiBase: "/api/v2",
+      apiBaseOld: 'https://airalo.com/api/v2',
+      apiBase: '/api/v2',
     },
   },
 
-  modules: ["@nuxt/image", "@nuxt/icon"],
+  modules: ['@nuxt/image', '@nuxt/icon'],
 
   icon: {
     customCollections: [
       {
-        prefix: "local",
-        dir: "./app/assets/icons",
+        prefix: 'local',
+        dir: './app/assets/icons',
         normalizeIconName: false,
       },
     ],
@@ -52,10 +50,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
-      include: [
-        "@vue/devtools-core",
-        "@vue/devtools-kit",
-      ],
+      include: ['@vue/devtools-core', '@vue/devtools-kit'],
     },
   },
 });

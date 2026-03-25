@@ -1,23 +1,23 @@
 <script setup lang="ts">
-const LSItems = {
-  icon: "profile",
-  class: "text-normal leading-normal text-white",
+  const LSItems = {
+    icon: 'profile',
+    class: 'text-normal leading-normal text-white',
 
-  logIn: {
-    text: "Log in",
-  },
+    logIn: {
+      text: 'Log in',
+    },
 
-  signUp: {
-    text: "Sign up",
-  },
-};
+    signUp: {
+      text: 'Sign up',
+    },
+  };
 </script>
 
 <template>
-  <div class="inline-flex justify-end items-center">
+  <div class="inline-flex items-center justify-end">
     <Icon
       :name="`local:${LSItems.icon}`"
-      class="flex justify-center items-start w-icon h-icon text-white text-icon overflow-hidden mr-2.5"
+      class="text-icon mr-2.5 flex h-icon w-icon items-start justify-center overflow-hidden text-white"
     />
 
     <a :class="LSItems.class" href="#">

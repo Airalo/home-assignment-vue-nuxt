@@ -1,17 +1,22 @@
+<script>
+  export default {
+    name: 'AppStoreBanner',
+  };
+</script>
+
 <template>
   <div class="bg-white py-10">
     <div class="container mx-auto">
       <div class="grid grid-cols-12 gap-7.5">
-        <div class="col-span-5 flex flex-col justify-center items-start">
-          <h2 class="text-h1 leading-h1 tracking-h1 font-semibold">
+        <div class="col-span-5 flex flex-col items-start justify-center">
+          <h2 class="text-h1 leading-h1 font-semibold tracking-h1">
             Ready to try eSIMs and change the way you stay connected?
           </h2>
-          <p class="text-normal leading-normal mt-2.5">
-            Download the Airalo app to purchase, manage, and top up your eSIMs
-            anytime, anywhere!
+          <p class="text-normal mt-2.5 leading-normal">
+            Download the Airalo app to purchase, manage, and top up your eSIMs anytime, anywhere!
           </p>
           <div class="mt-5">
-            <div class="flex justify-start items-center gap-5">
+            <div class="flex items-center justify-start gap-5">
               <nuxt-img
                 src="https://cdn.airalo.com/assets/images/svg/Apple-AppStore.svg"
                 alt=""
@@ -44,9 +49,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "AppStoreBanner",
-};
-</script>

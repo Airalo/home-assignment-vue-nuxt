@@ -30,6 +30,7 @@ No test runner or linter is configured.
 External API at `https://www.airalo.com/api/v2/` is proxied through Vite dev server (`/api` → `https://airalo.com`) and a Nuxt server route (`server/api/countries.get.ts`) to avoid CORS.
 
 Key endpoints:
+
 - Countries: `/api/v2/countries`, `/api/v2/countries?type=popular`, `/api/v2/countries/{slug}`
 - Regions: `/api/v2/regions`, `/api/v2/regions/{slug}`
 - Global: `/api/v2/regions/world`

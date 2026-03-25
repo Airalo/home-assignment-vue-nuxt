@@ -1,5 +1,8 @@
 {
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -8,9 +11,6 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "format": "prettier --write ."
-  },
-  "engines": {
-    "node": ">=20.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "latest",

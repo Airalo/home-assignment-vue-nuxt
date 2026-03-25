@@ -1,42 +1,37 @@
 <script setup lang="ts">
-const props = defineProps<{
-  CountryName: string;
-  Active: boolean;
-  ImageUrl?: string;
-}>();
+  const props = defineProps<{
+    countryName: string;
+    active: boolean;
+    imageUrl?: string;
+  }>();
 </script>
 
 <template>
   <div>
-    <div
-      class="flex justify-start items-center rounded shadow px-5 py-4 cursor-pointer"
-    >
+    <div class="flex cursor-pointer items-center justify-start rounded px-5 py-4 shadow">
       <nuxt-img
-        :src="
-          props.ImageUrl
-            ? props.ImageUrl
-            : 'https://cdn.airalo.com/assets/images/svg/Logo_light.svg'
-        "
+        :src="props.imageUrl ? props.imageUrl : 'https://cdn.airalo.com/assets/images/svg/Logo_light.svg'"
         width="37"
         height="28"
+        :alt="props.countryName"
         loading="lazy"
         class="mr-5"
       />
       <p class="text-normal leading-tabs font-medium">
-        {{ CountryName }}
+        {{ countryName }}
       </p>
       <div
+        class="ml-auto"
         :class="[
-          'ml-auto',
           {
-            'text-grey': !Active,
-            'text-primary': Active,
+            'text-grey': !active,
+            'text-primary': active,
           },
         ]"
       >
         <Icon
-          :name="!Active ? 'local:arrow_close' : 'local:arrow_open'"
-          class="flex justify-center items-center w-icon h-icon text-icon overflow-hidden"
+          :name="!active ? 'local:arrow_close' : 'local:arrow_open'"
+          class="text-icon flex h-icon w-icon items-center justify-center overflow-hidden"
         />
       </div>
     </div>
