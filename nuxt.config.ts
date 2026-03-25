@@ -38,14 +38,4 @@ export default defineNuxtConfig({
     },
   },
 
-  vite: {
-    server: {
-      proxy: {
-        "/api": {
-          target: "https://airalo.com",
-          changeOrigin: true,
-        },
-      },
-    },
-  },
 });
