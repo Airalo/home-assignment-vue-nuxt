@@ -1,9 +1,11 @@
 <script setup lang="ts">
+  import type { Country, Package } from '~/types';
+
   const isPopularCountries = true;
 
   const preloader = false;
 
-  const MockCountryData = {
+  const MockCountryData: Country = {
     id: 195,
     slug: 'singapore',
     title: 'Singapore',
@@ -16,7 +18,7 @@
     package_count: 5,
   };
 
-  const MockPackageData = {
+  const MockPackageData: Package = {
     id: 4149,
     slug: 'connect-lah-7days-1gb',
     type: 'sim',
@@ -72,7 +74,7 @@
       }"
       :package-data="{
         packageName: MockPackageData.operator.title,
-        supportedCountries: MockPackageData.operator.countries[0].title,
+        supportedCountries: MockPackageData.operator.countries[0]?.title ?? '',
         data: MockPackageData.data,
         validity: MockPackageData.validity,
         price: MockPackageData.price,

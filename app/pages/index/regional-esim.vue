@@ -1,7 +1,9 @@
 <script setup lang="ts">
+  import type { Package, Region } from '~/types';
+
   const preloader = false;
 
-  const MockRegionData = {
+  const MockRegionData: Region = {
     id: 1,
     slug: 'asia',
     title: 'Asia',
@@ -14,7 +16,7 @@
     package_count: 6,
   };
 
-  const MockPackageData = {
+  const MockPackageData: Package = {
     id: 4275,
     slug: 'asialink-7days-1gb',
     type: 'sim',
@@ -178,9 +180,7 @@
       <SharedPreloader />
     </div>
     <div class="mb-5">
-      <h2 class="text-h2 leading-h2 font-semibold tracking-h2">
-        Regions
-      </h2>
+      <h2 class="text-h2 leading-h2 font-semibold tracking-h2">Regions</h2>
     </div>
 
     <!-- Mock View Start: Mock View of Country and Package components. This components should be removed. -->

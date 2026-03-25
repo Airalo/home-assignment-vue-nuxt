@@ -1,12 +1,31 @@
 <script setup lang="ts">
-  export interface Props {
-    countryData?: any;
-    packageData: any;
+  import type { StyleTheme } from '~/types';
+
+  interface CountryDataProp {
+    title: string;
+    imageUrl: string;
   }
 
-  const props = withDefaults(defineProps<Props>(), {
-    countryData: null,
-  });
+  interface PackageDataProp {
+    packageName: string;
+    supportedCountries: string | number;
+    data: string;
+    validity: string;
+    price: number;
+    styleTheme: StyleTheme;
+    styleThemeGradient: string;
+    operatorImageUrl: string;
+  }
+
+  const props = withDefaults(
+    defineProps<{
+      countryData?: CountryDataProp | null;
+      packageData: PackageDataProp;
+    }>(),
+    {
+      countryData: null,
+    }
+  );
 </script>
 
 <template>

@@ -1,5 +1,7 @@
 <script setup lang="ts">
-  const footerMenu = [
+  import type { FooterBottomLink, FooterMenuSection, SocialLink } from '~/types';
+
+  const footerMenu: FooterMenuSection[] = [
     {
       title: 'Popular Countries',
       links: [
@@ -96,45 +98,20 @@
     },
   ];
 
-  const footerBottomLinks = {
-    class: 'text-row font-semibold tracking-row',
-    links: [
-      {
-        title: 'COPYRIGHT © 2023 AIRALO',
-        route: 'nolink',
-      },
-      {
-        title: 'PRIVACY POLICY',
-        route: '#',
-      },
-      {
-        title: 'TERMS & CONDITIONS',
-        route: '#',
-      },
-    ],
-  };
+  const footerBottomLinksClass = 'text-row font-semibold tracking-row';
+  const footerBottomLinks: FooterBottomLink[] = [
+    { title: 'COPYRIGHT © 2023 AIRALO', route: 'nolink' },
+    { title: 'PRIVACY POLICY', route: '#' },
+    { title: 'TERMS & CONDITIONS', route: '#' },
+  ];
 
-  const socialLinks = {
-    class: 'flex justify-center items-center',
-    links: [
-      {
-        icon: 'vk',
-        route: '#',
-      },
-      {
-        icon: 'instagram',
-        route: '#',
-      },
-      {
-        icon: 'twitter',
-        route: '#',
-      },
-      {
-        icon: 'linkedin',
-        route: '#',
-      },
-    ],
-  };
+  const socialLinksClass = 'flex justify-center items-center';
+  const socialLinks: SocialLink[] = [
+    { icon: 'vk', route: '#' },
+    { icon: 'instagram', route: '#' },
+    { icon: 'twitter', route: '#' },
+    { icon: 'linkedin', route: '#' },
+  ];
 </script>
 
 <template>
@@ -174,24 +151,22 @@
       </div>
       <div class="mt-10 flex items-center justify-between border-t border-solid border-t-grey py-5">
         <ul class="inline-flex items-center justify-start gap-5">
-          <li v-for="(link, index) in footerBottomLinks.links" :key="`footer-bottom-link-${index}`">
+          <li v-for="(link, index) in footerBottomLinks" :key="`footer-bottom-link-${index}`">
             <template v-if="link.route !== 'nolink'">
-              <a :href="link.route" :class="footerBottomLinks.class">{{ link.title }}</a>
+              <a :href="link.route" :class="footerBottomLinksClass">{{ link.title }}</a>
             </template>
             <template v-else>
-              <p :class="footerBottomLinks.class">
+              <p :class="footerBottomLinksClass">
                 {{ link.title }}
               </p>
             </template>
           </li>
         </ul>
         <div class="flex items-center justify-end">
-          <p class="text-row mr-5 font-semibold tracking-row">
-            FOLLOW US:
-          </p>
+          <p class="text-row mr-5 font-semibold tracking-row">FOLLOW US:</p>
           <ul class="inline-flex items-center justify-start gap-5">
-            <li v-for="(link, index) in socialLinks.links" :key="`footer-bottom-link-${index}`">
-              <a :href="link.route" :class="socialLinks.class" :aria-label="link.icon">
+            <li v-for="(link, index) in socialLinks" :key="`footer-bottom-link-${index}`">
+              <a :href="link.route" :class="socialLinksClass" :aria-label="link.icon">
                 <Icon :name="`local:${link.icon}`" class="text-icon" />
               </a>
             </li>

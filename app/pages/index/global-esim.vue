@@ -1,7 +1,9 @@
 <script setup lang="ts">
+  import type { Package } from '~/types';
+
   const preloader = false;
 
-  const MockPackageData = {
+  const MockPackageData: Package = {
     id: 2967,
     slug: 'discover-global-7days-1gb',
     type: 'sim',

@@ -1,12 +1,7 @@
 <script setup lang="ts">
-  const navigation = [
-    {
-      key: 'auth',
-    },
-    {
-      key: 'language',
-    },
-  ];
+  import type { NavigationKey } from '~/types';
+
+  const navigation: { key: NavigationKey }[] = [{ key: 'auth' }, { key: 'language' }];
 </script>
 
 <template>

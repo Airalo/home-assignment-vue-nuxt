@@ -1,8 +1,4 @@
-<script>
-  export default {
-    name: 'Preloader',
-  };
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="fixed top-0 left-0 z-50 h-full w-full bg-white/75">

@@ -1,15 +1,16 @@
 <script setup lang="ts">
-  const LSItems = {
+  interface LoginSignupConfig {
+    icon: string;
+    class: string;
+    logIn: { text: string };
+    signUp: { text: string };
+  }
+
+  const LSItems: LoginSignupConfig = {
     icon: 'profile',
     class: 'text-normal leading-normal text-white',
-
-    logIn: {
-      text: 'Log in',
-    },
-
-    signUp: {
-      text: 'Sign up',
-    },
+    logIn: { text: 'Log in' },
+    signUp: { text: 'Sign up' },
   };
 </script>
 

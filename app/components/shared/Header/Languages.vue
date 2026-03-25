@@ -1,5 +1,12 @@
 <script setup lang="ts">
-  const Language = {
+  interface LanguageConfig {
+    icon: string;
+    iconRight: string;
+    class: string;
+    text: string;
+  }
+
+  const Language: LanguageConfig = {
     icon: 'language',
     iconRight: 'arrow_down',
     class: 'text-normal leading-normal text-white',

@@ -6,10 +6,11 @@ export default defineEventHandler(async () => {
       headers: uuidv4 ? { Authorization: `Bearer ${uuidv4}` } : {},
     });
     return response;
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const err = error as { statusCode?: number; message?: string };
     throw createError({
-      statusCode: error?.statusCode ?? 500,
-      statusMessage: error?.message ?? 'Failed to fetch countries',
+      statusCode: err.statusCode ?? 500,
+      statusMessage: err.message ?? 'Failed to fetch countries',
     });
   }
 });

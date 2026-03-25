@@ -1,8 +1,4 @@
-<script>
-  export default {
-    name: 'AppStoreBanner',
-  };
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="bg-white py-10">

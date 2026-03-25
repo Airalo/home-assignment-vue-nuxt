@@ -1,22 +1,24 @@
 <script setup lang="ts">
+  import type { StyleTheme } from '~/types';
+
   const props = defineProps<{
     packageName: string;
     supportedCountries: string | number;
     operatorImageUrl?: string;
-    data: any;
-    validity: any;
+    data: string;
+    validity: string;
     price: number;
-    styleTheme: string; // dark, light
+    styleTheme: StyleTheme;
     styleThemeGradient: string;
   }>();
 
-  function countriesRow() {
+  function countriesRow(): string {
     return typeof props.supportedCountries === 'string'
       ? props.supportedCountries
       : `${props.supportedCountries} Countries`;
   }
 
-  function getPrice() {
+  function getPrice(): string {
     return `US$${props.price}`;
   }
 </script>
@@ -80,9 +82,7 @@
               name="local:data"
               class="text-icon mr-2.5 flex h-icon w-icon items-start justify-center overflow-hidden"
             />
-            <p class="text-row font-semibold tracking-row">
-              DATA
-            </p>
+            <p class="text-row font-semibold tracking-row">DATA</p>
           </div>
           <div class="text-right">
             <p class="text-h4 leading-h4 tracking-h4">
@@ -104,9 +104,7 @@
               name="local:validity"
               class="text-icon mr-2.5 flex h-icon w-icon items-start justify-center overflow-hidden"
             />
-            <p class="text-row font-semibold tracking-row">
-              VALIDITY
-            </p>
+            <p class="text-row font-semibold tracking-row">VALIDITY</p>
           </div>
           <div class="text-right">
             <p class="text-h4 leading-h4 tracking-h4">

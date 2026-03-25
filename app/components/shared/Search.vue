@@ -7,7 +7,7 @@
       class="text-normal h-[36px] w-full bg-transparent px-4 leading-normal"
       readonly
       placeholder="Where are you going?"
-    >
+    />
     <button
       type="button"
       class="absolute top-1 right-1 flex h-[36px] w-[36px] items-center justify-center rounded-small bg-primary"

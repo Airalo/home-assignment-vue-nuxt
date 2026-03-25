@@ -17,9 +17,7 @@
               </div>
             </div>
             <div class="text-center">
-              <p class="text-h4 leading-h4 font-medium text-white">
-                Is your device eSIM compatible?
-              </p>
+              <p class="text-h4 leading-h4 font-medium text-white">Is your device eSIM compatible?</p>
               <button
                 class="text-CTA-small mt-5 rounded-small border border-solid border-white px-5 py-2 leading-button font-bold text-white"
               >
