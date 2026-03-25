@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1110px;
+
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-primary: #4A4A4A;
+  --color-secondary: #8A8A8A;
+  --color-grey-light: #AFAFAF;
+  --color-grey: #DDDDDD;
+  --color-grey-dark: #2D2D2D;
+  --color-grey-package-dark: #343434;
+  --color-grey-package-light: #EEEEEE;
+  --color-body: #FAFAFA;
+
+  --font-size-icon: 22px;
+  --font-size-icon--line-height: 1;
+  --font-size-icon-small: 8px;
+  --font-size-icon-small--line-height: 1;
+  --font-size-small: 0.8125rem;
+  --font-size-small--line-height: 1.38461;
+  --font-size-row: 0.6875rem;
+  --font-size-row--line-height: 1.27272;
+  --font-size-normal: 0.9375rem;
+  --font-size-body: 1rem;
+  --font-size-h1: 1.9375rem;
+  --font-size-h2: 1.6875rem;
+  --font-size-h3: 1.1875rem;
+  --font-size-h4: 1.0625rem;
+  --font-size-h6: 0.8125rem;
+  --font-size-CTA: 0.6875rem;
+  --font-size-CTA-small: 0.625rem;
+
+  --leading-button: 1;
+  --leading-tabs: 1.3333;
+  --leading-normal: 1.4;
+  --leading-h1: 1.19354;
+  --leading-h2: 1.1851851852;
+  --leading-h3: 1.1578947368;
+  --leading-h4: 1.176470;
+  --leading-h6: 1.1538461;
+
+  --tracking-DEFAULT: normal;
+  --tracking-h1: -0.6px;
+  --tracking-h2: -0.5px;
+  --tracking-h3: -0.2px;
+  --tracking-h4: -0.1px;
+  --tracking-CTA-small: 1.5px;
+  --tracking-CTA: 1px;
+  --tracking-row: 1px;
+
+  --radius-small: 4px;
+  --radius-DEFAULT: 7px;
+  --radius-flag: 12px;
+
+  --shadow-DEFAULT: 0 10px 30px 0 rgba(0,0,0,0.15);
+  --shadow-flag: 0 5px 15px 0 rgba(0,0,0,0.3);
+
+  --spacing-icon: 22px;
+  --spacing-7_5: 30px;
+}
+
+@layer base {
+  html, body {
+    font-family: "IBM Plex Sans", sans-serif;
+    @apply text-body;
+    @apply text-primary;
+    @apply bg-body;
+  }
+
+  .nuxt-icon svg {
+    margin-bottom: 0 !important;
+  }
+
+  .country-flag-size {
+    @apply w-[140px];
+    @apply h-[88px];
+  }
+}

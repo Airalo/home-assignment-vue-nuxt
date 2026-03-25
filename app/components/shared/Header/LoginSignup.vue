@@ -15,8 +15,8 @@ const LSItems = {
 
 <template>
   <div class="inline-flex justify-end items-center">
-    <nuxt-icon
-      :name="LSItems.icon"
+    <Icon
+      :name="`local:${LSItems.icon}`"
       class="flex justify-center items-start w-icon h-icon text-white text-icon overflow-hidden mr-2.5"
     />
 

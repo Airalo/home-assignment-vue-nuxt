@@ -34,8 +34,8 @@ const props = defineProps<{
           },
         ]"
       >
-        <nuxt-icon
-          :name="!Active ? 'arrow_close' : 'arrow_open'"
+        <Icon
+          :name="!Active ? 'local:arrow_close' : 'local:arrow_open'"
           class="flex justify-center items-center w-icon h-icon text-icon overflow-hidden"
         />
       </div>

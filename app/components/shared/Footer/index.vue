@@ -201,7 +201,7 @@ const socialLinks = {
               :key="`footer-bottom-link-${index}`"
             >
               <a :href="link.route" :class="socialLinks.class">
-                <nuxt-icon :name="link.icon" class="text-icon" :filled="true" />
+                <Icon :name="`local:${link.icon}`" class="text-icon" />
               </a>
             </li>
           </ul>

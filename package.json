@@ -5,20 +5,23 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "engines": {
-    "node": ">=16.0.0 <20.0.0"
+    "node": ">=20.0.0"
   },
   "devDependencies": {
-    "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
-    "autoprefixer": "^10.4.13",
-    "nuxt": "^3.2.3",
-    "nuxt-svgo": "^1.1.0",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
-  },
-  "dependencies": {
-    "nuxt-icons": "^3.1.0"
+    "@antfu/eslint-config": "latest",
+    "@nuxt/icon": "latest",
+    "@nuxt/image": "latest",
+    "@tailwindcss/vite": "latest",
+    "eslint": "latest",
+    "eslint-plugin-vuejs-accessibility": "latest",
+    "nuxt": "^4.0.0",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "tailwindcss": "latest"
   }
 }

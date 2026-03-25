@@ -85,8 +85,8 @@ function getPrice() {
           ]"
         >
           <div class="flex justify-start items-center">
-            <nuxt-icon
-              :name="'data'"
+            <Icon
+              name="local:data"
               class="flex justify-center items-start w-icon h-icon text-icon overflow-hidden mr-2.5"
             />
             <p class="text-row tracking-row font-semibold">DATA</p>
@@ -105,8 +105,8 @@ function getPrice() {
           ]"
         >
           <div class="flex justify-start items-center">
-            <nuxt-icon
-              :name="'validity'"
+            <Icon
+              name="local:validity"
               class="flex justify-center items-start w-icon h-icon text-icon overflow-hidden mr-2.5"
             />
             <p class="text-row tracking-row font-semibold">VALIDITY</p>
@@ -134,5 +134,3 @@ function getPrice() {
     </div>
   </div>
 </template>
-
-//EEEEEE

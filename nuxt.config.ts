@@ -1,6 +1,14 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: ["@/assets/css/main.css"],
+  compatibilityDate: "2025-07-15",
+
+  devServer: {
+    port: 4000,
+  },
+
+  css: ["~/assets/css/main.css"],
 
   app: {
     head: {
@@ -29,13 +37,25 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/image-edge", "nuxt-icons"],
+  modules: ["@nuxt/image", "@nuxt/icon"],
 
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
+  icon: {
+    customCollections: [
+      {
+        prefix: "local",
+        dir: "./app/assets/icons",
+        normalizeIconName: false,
+      },
+    ],
   },
 
+  vite: {
+    plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: [
+        "@vue/devtools-core",
+        "@vue/devtools-kit",
+      ],
+    },
+  },
 });
