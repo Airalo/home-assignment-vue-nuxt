@@ -4,13 +4,20 @@ export interface ApiImage {
   url: string;
 }
 
+export interface Seo {
+  title: string | null;
+  keywords: string | null;
+  description: string | null;
+}
+
 export interface Country {
   id: number;
   slug: string;
   title: string;
   image: ApiImage;
-  seo?: string | null;
+  seo?: Seo | null;
   package_count?: number;
+  location_illustration?: string | null;
 }
 
 export interface Region {
@@ -18,8 +25,9 @@ export interface Region {
   slug: string;
   title: string;
   image: ApiImage;
-  seo?: string | null;
+  seo?: Seo | null;
   package_count?: number;
+  location_illustration?: string | null;
 }
 
 export type StyleTheme = 'dark' | 'light';
