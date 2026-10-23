@@ -98,4 +98,4 @@ TODO: choose a test runner and confirm `tests/unit/` as the test location.
 - `yarn format`: Prettier (with `prettier-plugin-tailwindcss`)
 - `npx tsc --noEmit`: type check. This needs `.nuxt/` to exist, because `tsconfig.json` extends `.nuxt/tsconfig.json`. `yarn install` creates it through the `postinstall` script (`nuxt prepare`).
 
-Package manager is yarn 1 (`packageManager: yarn@1.22.22`). Node `^22.23.4 || ^24.15.0 || >=26.0.0` (`package.json` `engines`).
+Package manager is yarn 1 (`packageManager: yarn@1.22.22`). Node `^22.23.4 || ^24.22.1 || >=26.12.1` (`package.json` `engines`).
