@@ -8,7 +8,7 @@
 # home-assignment-vue-nuxt
 
 Airalo eSIM storefront home assignment. Users browse Local, Regional and Global eSIMs.
-Nuxt 4, Vue 3 (`<script setup lang="ts">`), TypeScript, Tailwind CSS v4. Node >= 20, yarn 1.22.22 (`packageManager` in `package.json`).
+Nuxt 4, Vue 3 (`<script setup lang="ts">`), TypeScript, Tailwind CSS v4. Node `^22.22.3 || ^24.15.0 || >=26.0.0` (required by Nuxt 4.6), yarn 1.22.22 (`packageManager` in `package.json`).
 
 The task spec is in `README.md` (user story, acceptance criteria, API endpoints, Figma link).
 
