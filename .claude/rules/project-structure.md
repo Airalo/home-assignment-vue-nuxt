@@ -9,11 +9,6 @@
 
 This is a Nuxt 4 app (`nuxt@^4`). It uses the Nuxt 4 `app/` source directory. `server/` and `public/` stay at the repo root.
 
-> Heads-up: the root `CLAUDE.md` was written before the Nuxt 4 migration. It lists
-> `components/`, `pages/`, etc. at the repo root, uses npm, and mentions a Vite `/api`
-> proxy and a `tailwind.config`. None of these match the current tree. The layout
-> below is the one that actually exists.
-
 ## Top-level layout
 
 | Path | What it holds |

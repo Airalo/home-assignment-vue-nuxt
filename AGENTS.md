@@ -90,7 +90,6 @@ TODO: confirm `npx tsc --noEmit` is the right typecheck. Plain `tsc` does not ty
 - Do not edit `yarn.lock` by hand, and do not switch package managers.
 - Do not add new dependencies without justification
 - Do not reformat files outside the scope of the task
-- `CLAUDE.md` is out of date (it still describes npm, Node < 20, no linter and root-level `components/`/`pages/`). Trust this file and the code over it.
 - TODO: list any other files or directories the agent must not touch without approval
 
 ## Security
