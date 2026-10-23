@@ -9,3 +9,8 @@ dist
 .DS_Store
 .idea
 .vscode
+
+# >>> dotai >>>
+CLAUDE.local.md
+.claude/settings.local.json
+# <<< dotai <<<
