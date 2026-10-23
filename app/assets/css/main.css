@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+@source "../**/*.vue";
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1110px;
+
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #4a4a4a;
+  --color-secondary: #8a8a8a;
+  --color-grey-light: #afafaf;
+  --color-grey: #dddddd;
+  --color-grey-dark: #2d2d2d;
+  --color-grey-package-dark: #343434;
+  --color-grey-package-light: #eeeeee;
+  --color-body: #fafafa;
+
+  --text-icon: 22px;
+  --text-icon--line-height: 1;
+  --text-icon-small: 8px;
+  --text-icon-small--line-height: 1;
+  --text-small: 0.8125rem;
+  --text-small--line-height: 1.38461;
+  --text-row: 0.6875rem;
+  --text-row--line-height: 1.27272;
+  --text-normal: 0.9375rem;
+  --text-font-body: 1rem;
+  --text-h1: 1.9375rem;
+  --text-h2: 1.6875rem;
+  --text-h3: 1.1875rem;
+  --text-h4: 1.0625rem;
+  --text-h6: 0.8125rem;
+  --text-CTA: 0.6875rem;
+  --text-CTA-small: 0.625rem;
+
+  --leading-button: 1;
+  --leading-tabs: 1.3333;
+  --leading-normal: 1.4;
+  --leading-h1: 1.19354;
+  --leading-h2: 1.1851851852;
+  --leading-h3: 1.1578947368;
+  --leading-h4: 1.17647;
+  --leading-h6: 1.1538461;
+
+  --tracking: normal;
+  --tracking-h1: -0.6px;
+  --tracking-h2: -0.5px;
+  --tracking-h3: -0.2px;
+  --tracking-h4: -0.1px;
+  --tracking-CTA-small: 1.5px;
+  --tracking-CTA: 1px;
+  --tracking-row: 1px;
+
+  --radius-small: 4px;
+  --radius: 7px;
+  --radius-flag: 12px;
+
+  --shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  --shadow-flag: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+
+  --spacing-icon: 22px;
+  --spacing-7_5: 30px;
+}
+
+@layer base {
+  html,
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: var(--text-font-body);
+    @apply text-primary;
+    @apply bg-body;
+  }
+
+  .nuxt-icon svg {
+    margin-bottom: 0 !important;
+  }
+
+  .country-flag-size {
+    @apply w-[140px];
+    @apply h-[88px];
+  }
+}
